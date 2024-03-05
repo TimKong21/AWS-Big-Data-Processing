@@ -1,0 +1,22 @@
+[
+    {"Name": "added", "Type": "bigint"},
+    {"Name": "channel", "Type": "string"},
+    {"Name": "cityName", "Type": "string"},
+    {"Name": "comment", "Type": "string"},
+    {"Name": "countryIsoCode", "Type": "string"},
+    {"Name": "countryName", "Type": "string"},
+    {"Name": "deleted", "Type": "bigint"},
+    {"Name": "delta", "Type": "bigint"},
+    {"Name": "isAnonymous", "Type": "boolean"},
+    {"Name": "isMinor", "Type": "boolean"},
+    {"Name": "isNew", "Type": "boolean"},
+    {"Name": "isRobot", "Type": "boolean"},
+    {"Name": "isUnpatrolled", "Type": "boolean"},
+    {"Name": "metroCode", "Type": "bigint"},
+    {"Name": "namespace", "Type": "string"},
+    {"Name": "page", "Type": "string"},
+    {"Name": "regionIsoCode", "Type": "string"},
+    {"Name": "regionName", "Type": "string"},
+    {"Name": "time", "Type": "string"},
+    {"Name": "user", "Type": "string"}
+  ]
