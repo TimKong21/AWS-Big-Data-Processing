@@ -30,19 +30,26 @@ AWS Big Data Processing
 ### Setup and Execution
 
 1. **Prepare the Data**: Upload the `wikiticker-2015-09-12-sampled.json` file to your S3 bucket.
+
 2. **Launch an EMR Cluster**: Refer to the `Project Documentation.pdf` for detailed instructions on setting up the EMR cluster.
+
 3. **Run the Spark Job**:
    - SSH into the EMR master node.
+
    - Use `vi` to create and edit `filter.py` directly on the node:
      ```bash
      vi filter.py
      ```
+
    - Insert the Spark script content into `filter.py`. Exit and save the file by typing `:wq!`.
+
    - Execute the script using Spark-submit:
      ```bash
      spark-submit filter.py
      ```
+     
 4. **Catalog the Data**: Use the provided `datatypes.json` to create a schema in AWS Glue for the filtered dataset.
+
 5. **Query with Athena**: Following the setup in Glue, use Athena to execute queries against your data.
 
 ### Cleaning Up
@@ -56,5 +63,6 @@ For detailed instructions, configuration options, and best practices, refer to t
 ## References
 
 The following resources provide foundational lab exercises that inspired the tasks and structure of this project:
-- [Spark Job for Filtering and Processing Wikiticker Data](https://www.projectpro.io/hands-on-labs/spark-job-for-filtering-data): Details the tasks in developing a Spark job for data filtering, similar to the approach taken in this project.
-- [Create Glue Catalog Table and Query Data in AWS Athena](https://www.projectpro.io/hands-on-labs/aws-glue-catalog-table-example):  Details the process of creating a Glue catalog table and using Athena for querying, as implemented in the workflow of this project.
+
+- **[Spark Job for Filtering and Processing Wikiticker Data](https://www.projectpro.io/hands-on-labs/spark-job-for-filtering-data)**: Details the tasks in developing a Spark job for data filtering, similar to the approach taken in this project.
+- **[Create Glue Catalog Table and Query Data in AWS Athena](https://www.projectpro.io/hands-on-labs/aws-glue-catalog-table-example)**:  Details the process of creating a Glue catalog table and using Athena for querying, as implemented in the workflow of this project.
